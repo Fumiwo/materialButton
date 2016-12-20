@@ -1,0 +1,71 @@
+.dialog-button {
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 1px;
+    color: #3cf;
+    display: inline-block;
+    font-family: 'Noto Sans Japanese', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    top: 0;
+    left: 0;
+    line-height: 70px;
+    outline: none;
+    overflow: hidden;
+    padding: 0 60px;
+    position: relative;
+    width: 49%;
+  -webkit-animation: effect-background 6s;
+}
+
+.dialog-button .click-effect {
+  display: block;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-animation: effect-animation 5s;
+}
+
+.bg-effect {
+  background: rgba(246,246,246,1);
+    -webkit-transition: all 0.3s ease;
+}
+
+.dialog-button span {
+  background: #a8a8a8;
+}
+
+@-webkit-keyframes effect-animation {
+  0% {
+    -webkit-transform: scale(1);
+    opacity: 0.4;
+  }
+  40% {
+    -webkit-transform: scale(100);
+    background: #fff;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes effect-bg-animation {
+  0% {   
+    background: rgba(192,192,192,0.1);
+    transition: background-color 0.1s linear;
+  }
+
+  20% {
+    background: rgba(192,192,192,0.4);
+    transition: background-color 0.1s linear; 
+  }
+
+  40% {
+    background: #fff;
+    transition: background-color 0.0s ease; 
+  }
+}
